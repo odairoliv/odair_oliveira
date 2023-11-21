@@ -1,0 +1,121 @@
+.game-screen {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-space {
+    justify-content: center;
+    align-items: center;
+}
+
+.game-space h2 {
+    margin-right: 10px;
+    color: #ededed;
+    font-size: 200%;
+}
+
+input[type="number"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px #ededed solid;
+    width: 30%;
+    outline: none;
+    color: #ededed;
+    text-align: center;
+    font-size: 200%;
+}
+
+input[type="number"]:focus {
+    border: none;
+    border-bottom: 2px #ededed solid;
+    caret-color: #ededed
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.block{
+    width: 100%;
+    height: 100%;
+}
+
+.flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flex2{
+    width: 60%;
+    height: 50%;
+    border-radius: 10px;
+    border: solid 1px #ededed;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s ease;
+}
+
+.rules-screen{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    height: 30%;
+    border-radius: 10px;
+    border: solid 1px #ededed;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.teste{
+    background-color: rgba(255, 69, 69, 0.436);
+}
+
+.text-space {
+    margin: 20px 40px;
+}
+
+.text-space h3{
+    margin-bottom: 10px;
+}
+
+.conta-resposta{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+.button{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+#btn_resposta{
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+}
+
+#btn_resposta:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+}

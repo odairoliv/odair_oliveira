@@ -1,0 +1,19 @@
+.content-space{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    width: 55%;
+    height: fit-content;
+    border-radius: 10px;
+    border: solid 1px #ededed;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: block;
+    transition: background-color 1s ease;
+    margin-right: 20px;
+    padding: 30px 30px;
+    margin-top: 20px;
+}

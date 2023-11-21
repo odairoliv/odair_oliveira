@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../assets/globalstyle.css">
+    <link rel="stylesheet" type="text/css" href="../../pages/matematica_page/style.css">
+    <script defer src="../matematica_page/script.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <main>
+        <section class="side-menu">
+            <div class="grid-view">
+                <div class="grid-item">
+                    <a href="../home_page/index.html"><img src="../../assets/img/white-logo.png" alt="logo da 'oli games' na cor branca"></a>
+                </div>
+                <hr>
+                <div class="grid-item">
+                    <a href="../home_page/index.html"><p>Home</p></a>
+                </div>
+                <div class="grid-item">
+                    <a href="../memoria_page/index.html"><p>Jogo da Memória</p></a>
+                </div>
+                <div class="grid-item">
+                    <a href="../matematica_page/index.html"><p>Jogo da Matemática</p></a>
+                </div>
+            </div>
+        </section>
+        <section class="main-screen">
+            <div class="centralizar">
+                <header>
+                    <p id="game-name">Jogo da Matemática</p>
+                    <div class="user-score">
+                        <img src="../../assets/img/user_icon.png" alt="icone de usuário">
+                        <span class="name"></span>
+                        <div class="linha-vertical"></div>
+                        <span>Score: <span class="score"></span></span>
+                    </div>
+                </header>
+                <hr>
+                <div class="game-space">
+                    <div class="block">
+                        <div class="rules-screen">
+                            <div class="text-space">
+                                <h3>Regras</h3>
+                                <ul>
+                                    <li>Cada acerto equivale à 1 ponto para o seu score; </li>
+                                    <li>Não adicionar casas decimais na resposta da divisão, apenas os números inteiros (exemplo: 1,189 = 1); </li>
+                                    <li>Se o fundo do cartão ficar vermelho, você errou. Se ficar verde, você acertou.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex2">
+                                <div class="game-screen">
+                                    <div class="conta-resposta">
+                                        <h2><span class="numero1"></span> <span class="operador"></span> <span class="numero2"></span> =</h2>
+                                        <input type="number" id="resposta">
+                                    </div>
+                                    <div class="button">
+                                        <button id="btn_resposta">Verificar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

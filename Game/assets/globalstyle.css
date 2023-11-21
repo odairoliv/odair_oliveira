@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: fixed;
+    /* background-color: #141414; */
+    background-image: linear-gradient(45deg, rgb(0, 213, 255) -50%, #141414 50% 50%, #f709ff 150%);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    color: white;
+}
+
+.side-menu{
+    height: 95vh;
+    width: 30%;
+    max-width: 300px;
+    /* background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.427) -60%, #141414 50% 50%, #f709ff 150%); */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px) saturate(200%);
+    border-radius: 10px;
+}
+
+.grid-view {
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    width: 100%;
+    padding: 10px 0;
+    overflow-x: hidden;
+    padding-left: 2px;
+}
+
+.grid-item {
+    width: 98%;
+    height: 30px;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 5px;
+    font-size: 13px;
+    color: #ededed;
+}
+
+.grid-item a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+hr {
+    width: 90%;
+    margin: 0 auto 10px;
+    color: #ededed;
+    opacity: 0.5;
+}
+.grid-item:first-child{
+    margin-top: 10px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+}
+
+.grid-item:first-child:hover{
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.grid-item img {
+    width: 140px;
+}
+
+.main-screen{
+    width: 76%;
+    height: 95vh;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px) saturate(200%);
+    display: flex;
+    justify-content: center;
+}
+
+.centralizar {
+    width: 80%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 50%;
+    max-height: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-score{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.name {
+    margin-left: 10px;
+}
+
+.user-score img{
+    max-width: 35px;
+}
+
+.linha-vertical {
+    height: 40%;
+    border-left: 1px solid #ededed;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main-screen hr {
+    width: 100%;
+    margin-top: -20px;
+}
+
+.game-space{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-height: 540px;
+}
